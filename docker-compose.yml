@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  web:
+    container_name: burgerzilla_ys
+    image: burgerzilla_ys
+    ports:
+      - "5000:5000"  
+    environment:
+      - DATABASE_URL=postgresql://postgres:man97fort@db:5432/burgerzilla_ys
+    depends_on:
+      - db
+  db:
+    container_name: db
+    image: postgres:14
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=man97fort
+      - POSTGRES_DB=burgerzilla_ys
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}

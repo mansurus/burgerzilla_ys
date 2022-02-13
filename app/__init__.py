@@ -1,16 +1,51 @@
+""" 
+APP initializer
+"""
 from flask import Flask
-from flask_restx import Api
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-import sqlalchemy
-from config import Config 
+
+# Import extensions
+from .extensions import bcrypt, cors, db, jwt, ma
+
+# Import config
+from config import config_by_name
+import os
+import logging
+from logging.handlers import RotatingFileHandler
+
+def create_app(config_name):
+    app = Flask(__name__)
+    app.config.from_object(config_by_name[config_name])
+
+    register_extensions(app)
+
+    # Register blueprints
+    from .auth import auth_bp
+
+    app.register_blueprint(auth_bp)
+
+    from .api import api_bp
+
+    app.register_blueprint(api_bp, url_prefix="/api")
+    if app.debug:
+        if not os.path.exists('logs'):
+            os.mkdir('logs')
+        file_handler = RotatingFileHandler('logs/burgerzilla.log', maxBytes=10240,
+                                        backupCount=10)
+        file_handler.setFormatter(logging.Formatter(
+            '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'))
+        file_handler.setLevel(logging.INFO)
+        app.logger.addHandler(file_handler)
+
+        app.logger.setLevel(logging.INFO)
+        app.logger.info('Burgerzilla startup')
+
+    return app
 
 
-app = Flask(__name__)
-app.config.from_object(Config)
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
-api = Api(app,doc="/docs",title="Burgerzilla Api - Swagger",description="Burgerzilla Api",version="1.0")
-
-
-from app import routes, models,errors
+def register_extensions(app):
+    # Registers flask extensions
+    db.init_app(app)
+    ma.init_app(app)
+    jwt.init_app(app)
+    bcrypt.init_app(app)
+    cors.init_app(app)
