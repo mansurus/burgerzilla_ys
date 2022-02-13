@@ -1,0 +1,656 @@
+{
+	"info": {
+		"_postman_id": "3cb303ea-140d-4dc7-90fb-4c045574d7d1",
+		"name": "burgerzilla",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/api/orders/user/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDY5MTk2NSwianRpIjoiNmQwYzFkN2UtYmMyNS00YWQ4LTg5ZGYtYmQ3YTc1YTJiODcwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjQ0NjkxOTY1LCJleHAiOjE2NDUyOTY3NjV9.fgYijTUnAeack3EvTFvoyFhsad6JvBYAnrdhIklBl6I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 1,\r\n  \"userid\": 1,\r\n  \"productId\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"Meşhur dombili burger, özel soslu, sarmısaklı ve soğanlı\",\r\n  \"menuId\": 1,\r\n  \"restaurantId\": 1,\r\n  \"orderStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/orders/user/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/orders/user/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDY5Mzc5MSwianRpIjoiNWU4OTY5OTEtMGFiMy00MzJjLWFhOTctZmYxZjkzOTc2NWU2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjQ0NjkzNzkxLCJleHAiOjE2NDUyOTg1OTF9.RIsqo-yEhDDDjQMHUvg8JmGRsBUwbOXICoKBCNLeQqc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 2,\r\n  \"userid\": 2,\r\n  \"productId\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"Meşhur dombili burger, özel soslu, sarmısaklı ve soğanlı\",\r\n  \"menuId\": 1,\r\n  \"restaurantId\": 1,\r\n  \"orderStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/orders/user/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/orders/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDY5Mzk1MCwianRpIjoiZDI5MzVhOWItODQ5Ni00MjJhLTk4MTEtNzZlNTFmNmNmNjZhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjQ0NjkzOTUwLCJleHAiOjE2NDUyOTg3NTB9._S3LZvpEe8iahhSBupdK-Nmlqr47XEYMAtK6uAWlSuw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/orders/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/orders/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDY5NDM3MSwianRpIjoiZWE3ZjNiOWUtZDBmZC00ZWQ0LWExNjQtN2UwNTUzNjgwMzQ2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjQ0Njk0MzcxLCJleHAiOjE2NDUyOTkxNzF9.0nHJlmXhmMgc9zd_xrM4209IFDqc_9Li0X7Xbqwthkk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 2,\r\n  \"userid\": 2,\r\n  \"productId\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"Meşhur dombili burger, özel soslu, sarmısaklı ve soğanlı\",\r\n  \"menuId\": 1,\r\n  \"restaurantId\": 1,\r\n  \"orderStatus\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/orders/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/orders/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDY5NDQ2NCwianRpIjoiY2I4OTQ0MDQtZjkyNC00YTE2LTk3ZjItY2FlYzBlODQzMDc3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjQ0Njk0NDY0LCJleHAiOjE2NDUyOTkyNjR9.lkiWpMm3GQMjCICHDmeXi2Kbrmiy6kb3ZJcgWV62qIU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 1,\r\n  \"userid\": 1,\r\n  \"productId\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"Meşhur dombili burger, özel soslu, sarmısaklı ve soğanlı\",\r\n  \"menuId\": 1,\r\n  \"restaurantId\": 1,\r\n  \"orderStatus\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/orders/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/orders/user/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDY5NDY3NiwianRpIjoiNzA5ZTZiNDEtNzdjMS00YWE0LTljNDYtMjlmZmVjMzg0OTE1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjQ0Njk0Njc2LCJleHAiOjE2NDUyOTk0NzZ9.8fvYBYFmYXVchH682kbleVfu0DSNkwsxvVXp0yqlIFQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userid\": 2,\r\n  \"productId\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"Meşhur dombili burger, özel soslu, sarmısaklı ve soğanlı\",\r\n  \"menuId\": 1,\r\n  \"restaurantId\": 1,\r\n  \"orderStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/orders/user/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/orders/user/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDY5ODU4NSwianRpIjoiOTM3YzBlYmUtN2RjNC00NzA5LWFhMzMtMjljZmFiZWNjNGZiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjQ0Njk4NTg1LCJleHAiOjE2NDUzMDMzODV9.MkGYt5OimUOcxi3Uob0YIyhW6_m1VR4SQtv3iKH8fE0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 3,\r\n  \"userid\": 2,\r\n  \"productId\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"Meşhur dombili burger, özel soslu, sarmısaklı ve soğanlı\",\r\n  \"menuId\": 1,\r\n  \"restaurantId\": 1,\r\n  \"orderStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/orders/user/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"orders",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/menus/menu/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDcwNTY5NywianRpIjoiNTBlMzA3YjQtMDhhZC00ZWE4LTgyY2UtMmMwZWFhODQ3MDA0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjQ0NzA1Njk3LCJleHAiOjE2NDUzMTA0OTd9.c-RozMWyYlL3zO2gYXAgqHOuTyyBBMpV3Yp9Hj2V83w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 3,\r\n  \"userid\": 2,\r\n  \"productId\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"Meşhur dombili burger, özel soslu, sarmısaklı ve soğanlı\",\r\n  \"menuId\": 1,\r\n  \"restaurantId\": 1,\r\n  \"orderStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/menus/menu/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"menus",
+						"menu",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/menus/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDcwNTY5NywianRpIjoiNTBlMzA3YjQtMDhhZC00ZWE4LTgyY2UtMmMwZWFhODQ3MDA0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjQ0NzA1Njk3LCJleHAiOjE2NDUzMTA0OTd9.c-RozMWyYlL3zO2gYXAgqHOuTyyBBMpV3Yp9Hj2V83w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 3,\r\n  \"userid\": 2,\r\n  \"productId\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"Meşhur dombili burger, özel soslu, sarmısaklı ve soğanlı\",\r\n  \"menuId\": 1,\r\n  \"restaurantId\": 1,\r\n  \"orderStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/menus/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"menus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/menus/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDczNjczOCwianRpIjoiYTVkNWY5NzQtN2NkYi00NWQ4LWJmMGMtMjQ5MThmZDUyNmI0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MywibmJmIjoxNjQ0NzM2NzM4LCJleHAiOjE2NDUzNDE1Mzh9.IiVJXzYBNRNzbDA_yjMwYGF84-dwOf8oevrWYcWFBBk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"menuid\": 7,\r\n  \"productid\": 7,\r\n  \"productname\": \"tantuni\",\r\n  \"price\": 20,\r\n  \"description\": \"Tarsus tantuni\",\r\n  \"image\": 1,\r\n  \"restaurantid\": 1,\r\n  \"menustatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/menus/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"menus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/restaurants/restaurant/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDczODk3NywianRpIjoiZmU1NzdjMzEtMDg0Ny00NzhkLTliOWMtOTM2ZmY0YTJkZGJjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NCwibmJmIjoxNjQ0NzM4OTc3LCJleHAiOjE2NDUzNDM3Nzd9.OxKyvN5BpNVl6ZA6SroWjhckxvhJcvhItEG-gXlt3r0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"menuid\": 8,\r\n  \"productid\": 8,\r\n  \"productname\": \"tantuni\",\r\n  \"price\": 20,\r\n  \"description\": \"Tarsus tantuni\",\r\n  \"image\": 1,\r\n  \"restaurantid\": 2,\r\n  \"menustatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/restaurants/restaurant/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"restaurants",
+						"restaurant",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/restaurants/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDczOTQyNiwianRpIjoiZGEwZDljYmItMzAyYS00MDBlLTg4NGUtMDZhYTE0YWMyODk1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NCwibmJmIjoxNjQ0NzM5NDI2LCJleHAiOjE2NDUzNDQyMjZ9.jigFvRMQrTuaUgBhgVWnXGUVNoois4GGDm_ldFHg3TI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderid\": 6,\r\n  \"userid\": 1,\r\n  \"productid\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"değiştirildi\",\r\n  \"menuid\": 1,\r\n  \"restaurantid\": 2,\r\n  \"orderstatus\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/restaurants/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"restaurants",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/api/restaurants/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0NDc0MDc1OSwianRpIjoiZDRmZmQxNzUtZDY3Zi00YjNmLTk1ZWQtN2UzZDhlMDA1ODBiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6NCwibmJmIjoxNjQ0NzQwNzU5LCJleHAiOjE2NDUzNDU1NTl9.9o2h8vh8vu7k3apLgJwDCCFCLJfca7juATzsLEMzN8E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"userid\": 1,\r\n  \"productid\": 1,\r\n  \"price\": 30,\r\n  \"description\": \"değiştirildi\",\r\n  \"menuid\": 1,\r\n  \"restaurantid\": 1,\r\n  \"orderstatus\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/restaurants/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"restaurants",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ali.mansur@gmail.com\",\r\n  \"username\": \"alimansur\",\r\n  \"name\": \"ali mansur\",\r\n  \"password\": \"man97fort\",\r\n  \"usertype\": 1,\r\n  \"isactive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/auth/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ali.mansur@gmail.com\",\r\n  \"username\": \"alimansur\",\r\n  \"name\": \"ali mansur\",\r\n  \"password\": \"man97fort\",\r\n  \"usertype\": 1,\r\n  \"isactive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/auth/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
