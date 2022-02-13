@@ -104,4 +104,12 @@ Under models folder, for each of our table, there is one .py file with the name 
 ### Tests
 To test the endpoints unittest model is implemented in this project. There are functions for endpoints to test different methods like get, post, put, delete. Mock datas are prepared and with necessary assertion functions from unittes library, endpoints are tested.
 
-
+## Cloning and running the project
+### Prerequisites 
+There are two way of running the project: local environment and docker. <br />
+#### In Local Environment
+Before you run in local you need to install python and postgresql in your local environment, the necessary links are respectively <a href="https://www.python.org/downloads/">here</a> and <a href="https://www.postgresql.org/download/">here</a>. Do not forget to add python to path and create a database server in postgres with database to be used in the db configuration.<br />
+To run in local, copy the following command:<br />
+`git clone https://github.com/mansurus/burgerzilla_ys.git` and then open "burgerzilla_ys" folder in terminal. If you are using Windows type `python -m venv env` and hit enter. With this way, you will create a virtual environment to create our libraries. To activate the virtual env in our terminal type `.\env\Scripts\activate`. If you see (env) in the beginning of your terminal command line, then it is activated. Otherwise please visit this <a href="https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/">link</a>. To do the same in linux based systems please follow this <a href="https://docs.python.org/3/library/venv.html">link</a>.Now, we can create our libraries inside env. The necessary command is `pip install -r requirements.txt`. After the libraries installed, we need to perform db operation with following commands `flask db init`, `flask db migrate`, `flask db upgrade`. But before you do this, you need to specify DATABASE_URL in .env file as `DATABASE_URL=postgresql://<databaseuser>:<databasepassword>@localhost:<port>/<databasetoconnect>`. If all is success, `flask run`. The api can be tested with swaggerui.
+#### In Docker
+To run in 
