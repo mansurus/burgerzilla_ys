@@ -119,4 +119,5 @@ After installing docker, open terminal and type `docker build -t <imagename>:<ta
 ### Future Work
 As the future work of this project, API endpoints will be improved and new features will be implemented. Roles feature will be activated for creating different employee roles for a restaurant. Test cases will be improved and all endpoints will be tested. Queue mechanism can be added to the system. And to be able to run on the internet, a deployment will be done. 
 
-<br />## Ali Mansur
+<br />
+## Ali Mansur
