@@ -1,6 +1,6 @@
 # Burgerzilla API
 ## Introduction
-### Auth api
+### Auth
 The application is a small food ordering system that allows users to register the system to create food orders from restaurants. There are two types of users stored in User table with specified user type, respectively 1 and 2 for normal users and restaurants. User table keeps active status of each user or restaurant, allowing any member to freeze their membership. The benefit of this approach is that with only one update user membership can be activa again. The other columns are about user's personal information namely: email, username, name, password(hashed), joined_date and role_id. Role id is a column for future work for creating different levels of membership. For example, a restaurant employee might get menu edit right with but still be lower than admin(owner of the restaurant).<br />
 <br />
 ### The Table Overview of the Food Ordering System
@@ -88,3 +88,5 @@ burgerzilla_ys/
 ┣ requirements.txt
 ┗ runservice.py
 ```
+### Api
+#### Menus
