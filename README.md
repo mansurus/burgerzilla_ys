@@ -88,5 +88,14 @@ burgerzilla_ys/
 ┣ requirements.txt
 ┗ runservice.py
 ```
-### Api
-#### Menus
+### Api 
+The folders under api have common structure as controller.py, dto.py, service.py and utils.py. <br />
+#### controller.py
+The endpoints are defined here. All operations like get, post, put, delete are under controller.py to make requests to the db.
+#### dto.py
+The structural models for each table are defined under dto.py. Related table fields are defined under specified names using Namespace from flask-restx and created with the model method of Namespace class. 
+#### service.py
+Business operations are defined under service.py. Logical code blocks are created to be able to perform get, post, update and delete operations that will be send to the db. Related models are imported in service.py and queries are formed using those models.
+#### utils.py
+Helper functions are stored here. For example, dump operation for a db model got from related schema are returned in the functions created in utils.py
+
